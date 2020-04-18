@@ -1,7 +1,12 @@
 <template>
   <div>
     <v-container>
-      <v-carousel cycle height="400" hide-delimiter-background show-arrows-on-hover>
+      <v-carousel
+        cycle
+        height="400"
+        hide-delimiter-background
+        show-arrows-on-hover
+      >
         <v-carousel-item v-for="(slide, i) in slides" :key="i">
           <v-sheet :color="colors[i]" height="100%">
             <v-row class="fill-height" align="center" justify="center">
@@ -13,9 +18,9 @@
       <v-row>
         <v-col xs="12" sm="6" md="6" lg="4" xl="3">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
-          nisi consectetur aspernatur error minima laboriosam
-          , consequatur in, quibusdam deserunt ut suscipit sunt sapiente illo,
-          at exercitationem odio necessitatibus corrupti voluptate!
+          consectetur aspernatur error minima laboriosam , consequatur in,
+          quibusdam deserunt ut suscipit sunt sapiente illo, at exercitationem
+          odio necessitatibus corrupti voluptate!
         </v-col>
       </v-row>
     </v-container>
@@ -37,7 +42,6 @@ export default {
     }
   }
 }
-</script>>
+</script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

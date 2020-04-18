@@ -4,8 +4,12 @@
     <v-container class="my-5">
       <v-expansion-panels>
         <v-expansion-panel v-for="project in myProject" :key="project.title">
-          <v-expansion-panel-header>{{ project.title}}</v-expansion-panel-header>
-          <v-expansion-panel-content>{{ project.content }}</v-expansion-panel-content>
+          <v-expansion-panel-header>{{
+            project.title
+          }}</v-expansion-panel-header>
+          <v-expansion-panel-content>{{
+            project.content
+          }}</v-expansion-panel-content>
         </v-expansion-panel>
       </v-expansion-panels>
     </v-container>
@@ -71,5 +75,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

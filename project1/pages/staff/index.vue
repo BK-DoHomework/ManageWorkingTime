@@ -1,15 +1,11 @@
 <template>
-  <div>
-    Staff
-  </div>
+  <div>Staff</div>
 </template>
 
 <script>
-  export default {
-    layout: 'staff'
-  }
+export default {
+  layout: 'staff'
+}
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

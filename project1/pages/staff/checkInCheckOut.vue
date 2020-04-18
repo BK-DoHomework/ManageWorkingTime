@@ -1,15 +1,11 @@
 <template>
-  <div>
-    CheckInCheckOut
-  </div>
+  <div>CheckInCheckOut</div>
 </template>
 
 <script>
-  export default {
-    layout: 'staff'
-  }
+export default {
+  layout: 'staff'
+}
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

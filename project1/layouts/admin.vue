@@ -1,19 +1,31 @@
 <template>
   <v-app>
-    <v-navigation-drawer v-model="drawer" :mini-variant="miniVariant" :clipped="clipped" fixed app>
+    <v-navigation-drawer
+      v-model="drawer"
+      :mini-variant="miniVariant"
+      :clipped="clipped"
+      fixed
+      app
+    >
       <v-layout column align-center>
         <v-flex class="mt-5">
           <v-avatar size="100">
             <img class="text-lg-center" src="/avatar-1.png" />
           </v-avatar>
-          <p class="white--text subheading mt-1"> </p>
+          <p class="white--text subheading mt-1"></p>
         </v-flex>
         <v-flex class="mt-4 mb-3">
           <PopupConfirmCheckInCheckOut />
         </v-flex>
       </v-layout>
       <v-list>
-        <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" router exact>
+        <v-list-item
+          v-for="(item, i) in items"
+          :key="i"
+          :to="item.to"
+          router
+          exact
+        >
           <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
@@ -45,7 +57,14 @@
         </template>
 
         <v-list>
-          <v-list-item v-for="(item, i) in items" :key="i" @click="on" :to="item.to" router exact>
+          <v-list-item
+            v-for="(item, i) in items"
+            :key="i"
+            :to="item.to"
+            router
+            exact
+            @click="on"
+          >
             <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item>
         </v-list>
@@ -130,4 +149,3 @@ export default {
   }
 }
 </script>
-

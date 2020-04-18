@@ -2,7 +2,14 @@
   <div>
     <v-tooltip top>
       <template v-slot:activator="{ on }">
-        <v-btn small flat color="grey" @click="sortBy('person')" slot="activator" v-on="on">
+        <v-btn
+          slot="activator"
+          small
+          flat
+          color="grey"
+          @click="sortBy('person')"
+          v-on="on"
+        >
           <v-icon small left>mdi-human</v-icon>
           <span class="caption text-lowercase">By Person</span>
         </v-btn>
@@ -25,5 +32,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>
