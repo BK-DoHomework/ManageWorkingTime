@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <Navbar v-bind:items="items" />
+    <Navbar :items="items" />
     <nuxt />
   </v-app>
 </template>
@@ -34,4 +34,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 </style>
