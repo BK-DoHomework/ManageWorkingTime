@@ -1,6 +1,6 @@
 <template>
   <div class="dashboard">
-    <h1 class="subheading grey--text">Dashboard</h1>
+    <h1 class="subheading grey--text">All Admin</h1>
 
     <v-container class="my-5">
       <v-layout row justify-start class="mb-3">
@@ -38,38 +38,17 @@
         </v-tooltip>
       </v-layout>
 
-      <v-card v-for="project in projects" :key="project.title" flat>
-        <v-layout row wrap :class="`pa-3 project ${project.status}`">
-          <v-flex xs12 md6>
-            <div class="caption grey--text">Project title</div>
-            <div>{{ project.title }}</div>
-          </v-flex>
-          <v-flex xs6 sm4 md2>
-            <div class="caption grey--text">Person</div>
-            <div>{{ project.person }}</div>
-          </v-flex>
-          <v-flex xs6 sm4 md2>
-            <div class="caption grey--text">Due by</div>
-            <div>{{ project.due }}</div>
-          </v-flex>
-          <v-flex xs2 sm4 md2>
-            <div class="right">
-              <v-chip
-                small
-                :class="`${project.status} white--text my-2 caption`"
-                >{{ project.status }}</v-chip
-              >
-            </div>
-          </v-flex>
-        </v-layout>
-        <v-divider></v-divider>
-      </v-card>
+      <CardAdmin :projects="projects" />
     </v-container>
   </div>
 </template>
 
 <script>
+import CardAdmin from '../../components/CardAdmin'
 export default {
+  components: {
+    CardAdmin
+  },
   layout: 'admin',
   data() {
     return {
